@@ -1297,10 +1297,4 @@ button[aria-label]::before {
       -ms-flex-pack: start;
           justify-content: start;
   row-gap: clamp(0.25rem, -0.0049019608rem + 1.045751634vw, 1.25rem);
-}
-
-.header,
-main > *:not(:last-child),
-.footer {
-  display: none !important;
 }/*# sourceMappingURL=main.css.map */
