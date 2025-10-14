@@ -1202,6 +1202,25 @@ button[aria-label]::before {
     row-gap: 0.375rem;
   }
 }
+.section__header-inner:has(.section__link) {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
+}
+@media (width > 47.99875rem) {
+  .section__header-inner:has(.section__link) {
+    grid-template-columns: 1fr auto;
+  }
+}
+@media (width <= 47.99875rem) {
+  .section__header-inner:has(.section__link) {
+    row-gap: 1.875rem;
+  }
+}
 .section__subtitle {
   justify-self: start;
 }
@@ -1297,4 +1316,66 @@ button[aria-label]::before {
       -ms-flex-pack: start;
           justify-content: start;
   row-gap: clamp(0.25rem, -0.0049019608rem + 1.045751634vw, 1.25rem);
+}
+
+.tabs__header {
+  border-bottom: var(--border);
+}
+.tabs__buttons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+  padding-block: clamp(1.25rem, 0.7720588235rem + 1.9607843137vw, 3.125rem);
+}
+@media (width <= 90.06125rem) {
+  .tabs__buttons {
+    -webkit-column-gap: 0.875rem;
+       -moz-column-gap: 0.875rem;
+            column-gap: 0.875rem;
+  }
+}
+.tabs__button {
+  padding: clamp(1.125rem, 0.9338235294rem + 0.7843137255vw, 1.875rem) 0.6875rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  color: var(--color-gray-60);
+  background-color: transparent;
+}
+@media (any-hover: hover) {
+  .tabs__button:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+}
+@media (any-hover: none) {
+  .tabs__button:active {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+}
+@media (width <= 90.06125rem) {
+  .tabs__button {
+    font-size: 0.875rem;
+  }
+}
+.tabs__button.is-active {
+  color: var(--color-light);
+  background-color: var(--color-dark-10);
+  font-weight: 500;
+  pointer-events: none;
+}
+.tabs__content:not(.is-active) {
+  display: none;
+}
+.tabs__content:focus-visible {
+  outline-offset: -1rem;
+}
+
+.header,
+main > *:not(:last-child),
+.footer {
+  display: none !important;
 }/*# sourceMappingURL=main.css.map */

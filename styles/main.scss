@@ -3,7 +3,6 @@
 @use "variables";
 @use "utils";
 @use "globals";
-
 @use "blocks/icon";
 @use "blocks/burger-button";
 @use "blocks/button";
@@ -17,12 +16,17 @@
 @use "blocks/metrics";
 @use "blocks/resources-preview";
 @use "blocks/team";
-
 @use "blocks/list";
 @use "blocks/tile";
 @use "blocks/tag";
 @use "blocks/section";
 @use "blocks/card";
+@use "blocks/tabs";
+@use "blocks/person-card";
+@use "blocks/blog-card";
+@use "blocks/blog-actions";
+
+
 
 .header,
 main > *:not(:last-child), 
