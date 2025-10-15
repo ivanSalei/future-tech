@@ -10,7 +10,6 @@
             column-gap: rem(8);
         }
     }
-   
 
     &__button {
         display: inline-flex;
@@ -25,11 +24,11 @@
         font-family: var(--font-family-accent);
 
         &.is-active {
-       svg * {
-        fill: var(--color-red);
-        stroke: var(--color-red);
-       } 
-    }
+            svg * {
+                fill: var(--color-red);
+                stroke: var(--color-red);
+            }
+        }
 
         @include laptop {
             column-gap: rem(2);
