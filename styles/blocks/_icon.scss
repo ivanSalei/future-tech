@@ -28,4 +28,10 @@
         }
 
     }
+
+    &--yellow-eye {
+        &::after {
+            background-image: url(../../icons/icon-eae.svg);
+        }
+    }
 }
