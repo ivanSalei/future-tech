@@ -26,12 +26,17 @@
 @use "blocks/blog-card";
 @use "blocks/blog-actions";
 @use "blocks/download-info";
+@use "blocks/_bordered-grid";
+@use "blocks/reviews-card";
+@use "blocks/rating-view";
+@use "blocks/about";
+@use "blocks/about-card";
 
 
 
-.header,
-main > *:not(:last-child), 
-.footer {
-   display: none !important;
-}
+// .header,
+// main > *:not(:last-child), 
+// .footer {
+//    display: none !important;
+// }
 

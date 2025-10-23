@@ -5,16 +5,22 @@
     align-items: center;
     column-gap: fluid(16, 8);
 
+    --imageSize: #{rem(80)};
+
+    @include laptop {
+        --imageSize: #{rem(60)};
+    }
+
     &__image {
-        width: rem(80);
+        width: var(--imageSize);
         border-radius: 50%;
         background-color: var(--color-dark-15);
 
-        @include laptop {
-            width: rem(60);
-            height: rem(60);
-        }
-    }
+    //     @include laptop {
+    //         // width: rem(60);
+    //         // height: rem(60);
+    //     }
+     }
 
     &__body {
         display: grid;
